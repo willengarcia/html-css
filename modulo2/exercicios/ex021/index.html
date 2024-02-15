@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <!-- pseudo elemento mexe no conteúdo-->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgba(245, 43, 43, 0.829);
+            text-decoration: none;
+        }
+        a:visited{
+            color: cadetblue;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: darkblue;
+        }
+        a:active{
+            color:darkslateblue;
+        }
+        a::after{
+            content: ' (link)';
+            color: rgba(128, 128, 128, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="#" target="_blank">Repositório</a></li>
+        <li><a href="#">Canal Youtube</a></li>
+        <li><a href="#">Site</a></li>
+    </ul>
+</body>
+</html>

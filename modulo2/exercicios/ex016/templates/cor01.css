@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* Para colocar comentários em css*/
+/* Para coolocar um gradiente linear-gradient(nºdeg, cor1, cor2) */
+/* Para colocar um gradiente radial radial-gradient(circle, cor1, cor2)
+/* Configurações Globais*/
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+body{
+    background-image: linear-gradient(to left, #3b5553,#889C9B , #B2BEBF);
+    background-attachment: fixed;
+}
+main{
+    background-color: rgba(128, 124, 124, 0.726);
+    width: 600px; /* largura da "div" */
+    padding: 10px;
+    margin: auto; /* sempre fica no meio */
+    border-radius: 10px; /* arredondar as bordas */
+    box-shadow: 5px 5px 15px #33302c80; /* lado, baixo, espalhar, cor */
+}
+h1{
+    color: #BD2A2E;
+    text-align: center;
+    text-shadow: 1px 1px 2px #33302c9d;
+}
+h2{
+    color: #33302c;
+}
+p{
+    text-align: justify;
+}

@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf');
+}
+:root{
+    --cor_teste: #94D155;
+}
+body{
+    margin: 0px;
+    background-color: var(--cor_teste);
+}
+h2, h3{
+    font-family: 'idroid', sans-serif;
+    background-image: linear-gradient(to right, #33471e, rgba(192, 236, 194, 0.616));
+    margin: auto 10px auto 10px;
+}
+header{
+    background-image: linear-gradient(to top, #33471e, #A6EB60);
+    padding: 1px;
+    box-shadow: 1px 3px 7px #293818a2;
+}
+header > h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: none;
+}
+header > p{
+    text-align: center;
+    color: aliceblue;
+}
+section > h1{
+    font-family: 'idroid', sans-serif;
+    margin: auto 10px auto 10px;
+    color:#1b2510;
+    font-size: 25px;
+
+}
+nav > a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+nav > a:hover{
+    background-color: #b3e681a8;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+main{
+    margin: auto;
+    background-color: #ffffffb0;
+    min-width: 300px; /* Reponsividade */
+    max-width: 800px;
+}
+section > p{
+    margin: 15px 10px 15px 10px;
+    text-align: justify;
+}
+section > h1{
+    margin-top: 0px;
+}
+section > img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+picture > source{
+    width: 100%; /* reponsividade  picture/source */
+}
+picture > img{
+    width: 100%;
+}
+#video > section{
+    background-color: #293818a2;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 5px;
+}
+iframe{
+    width: 100%;
+}
+aside{
+    background-color: #33471e;
+    padding: 10px;
+    border-radius: 10px;
+}
+aside > ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0';
+}
+a.externo{
+    background-color: #94D155;
+    color: #253316;
+    text-decoration: none;
+}
+footer{
+    background-color: #151d0cdc;
+    padding: 5px;
+}
+footer > p{
+    padding: 0px;
+    margin: 0%;
+    text-align: center;
+    color: rgb(208, 241, 213);
+    font-size: 0.8em;
+}

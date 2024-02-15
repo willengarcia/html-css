@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens e outras Mídias</h1>
+    <h2>Imagens Dinâmicas</h2>
+    <picture> <!-- para colocar imagens dinâmicas, basta utilizar o source com max width-->
+        <!-- A base do picture é a imagem padrão, em ordem decrescente dos max-width, com as imagens pequenas-->
+        <source media="(max-width: 750px)" srcset="imagens/foto_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto_m.png" type="image/png">
+        <img src="imagens/foto_g.png" alt="Foto grande">
+    </picture>
+    <h2>Reproduzindo áudio</h2>
+    <p>Primeira maneira</p>
+    <audio src="midia/Moons - Patrick Patrikios.mp3" controls></audio> 
+    <!-- formatos: MP3 WAV OGG-->
+    <p>Maneira de compatibilidade</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Moons - Patrick Patrikios.mp3" type="audio/mp3">
+        <p>Infezlimente o navegador não consegue reproduzir o áudio</p>
+    </audio>
+</body>
+</html>

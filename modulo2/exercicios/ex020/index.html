@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <!-- Pseudo-classe está relacionado ao estado de um determinado elemento-->
+    <!-- div > p pai e filho-->
+    <style>
+        div{
+            display: inline-block;
+            background-color: rgba(219, 166, 86, 0.63);
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            font-size: 80px;
+        }
+        div:hover{
+            background-color: red;
+        }
+        img{
+            width: 500px;
+            height: 500px;
+        }
+        #img{
+            width: 500px;
+            height: 500px;
+        }
+        #img > img{
+            display: none;
+        }
+        #img:hover > img{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">T</div>
+    <div id="d2">E</div>
+    <div id="d3">A</div>
+    <div id="d4">M</div>
+    <div id="d5">O</div>
+    <div id="img"><img src="foto.jpg" alt="Eu"></div>
+</body>
+</html>

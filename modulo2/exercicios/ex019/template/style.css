@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* id é # e class é . */
+body{
+    background-image: linear-gradient(145deg, #36BFB1 12%, #02735E 85%);
+}
+main{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 2px 5px 15px #0140349d;
+    border-radius: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    color: #014034;
+}
+h2#Principal{
+    color: #054136;
+}
+h2#Secundario{
+    text-align: left;
+}
+h3{
+    color: #02251f;
+}
+.sub{
+    text-align: right;
+}
