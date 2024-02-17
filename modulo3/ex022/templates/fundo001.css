@@ -9,6 +9,9 @@ div.quadrado{
     display: inline-block;
     border-radius: 10px;
     background-color: aquamarine;
+    color:aliceblue;
+    text-align: center;
+    font-size: 20px;
 }
 div#q1{
     background-color: brown;

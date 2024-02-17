@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body{
+    height: 97vh;
+    width: 98vh;
+    border: 1px dashed black;
+    background-image: url('../imagens/pattern002.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    /* a imagem vai ficar posicionada independente da centralização e tamanho do body */
+}

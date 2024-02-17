@@ -1,0 +1,6 @@
+@charset "UTF-8";
+body{
+    background-image: url('../imagens/wallpaper001.jpg');
+    background-size: 100px 100px; /* replica o tamanho da imagem base x altura*/
+    background-repeat: repeat-x; /* repeat (repita), no-repeat (não repita), reapet-x ( horizontalmente, repeat-y(repita verticalmente */
+} 
