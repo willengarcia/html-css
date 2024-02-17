@@ -1,15 +1,15 @@
 @charset "UTF-8";
 body{
     height: 100vh;
-    background-color: black;
-    background-image: url('../imagens/wallpaper002.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; /* contain: não pode conter cortes. cover: tela inteira obs: 100vh no height */
+     /* contain: não pode conter cortes. cover: tela inteira obs: 100vh no height */
+     /* scroll: vai rolando de acordo com o scroll do mouse. fixed: rola somente o conteudo, exceto a imagem (usa-se junto com o size cover). */
+    /* background: cor > imagem > posição > repetir >(size - melhor tirar) > attachment*/
+    background: black url('../imagens/wallpaper002.jpg') center center no-repeat fixed;
+    background-size: cover;
 }
 main > h1, p{
     text-align: center;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 main{
     background-color: rgba(72, 186, 206, 0.753);
