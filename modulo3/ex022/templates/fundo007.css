@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* todo container tem a posição relativa */
+#container{
+    position: relative;
+    height: 500px;
+    background-color: brown;
+    padding: 10px;
+    background-image: url('../imagens/target001.png');
+    background-size: 100% 100%;
+}
+/* quando há um conteiner relativo, contendo um conteudo position, pode mexer nele com: left, top, bottom e rigth*/
+#conteudo{
+    height: 200px;
+    width: 400px;
+    margin: auto; /* só serve alinhamento horizontal */
+    left: 50%;
+    top: 50%;
+    background-color: rgb(42, 165, 97);
+    position: absolute;
+    transform: translate(-50%, -50%); /* esquerda / direita (centralizar um div)*/
+}
