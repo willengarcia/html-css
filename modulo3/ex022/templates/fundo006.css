@@ -1,0 +1,21 @@
+@charset "UTF-8";
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url('../imagens/wallpaper002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* contain: não pode conter cortes. cover: tela inteira obs: 100vh no height */
+}
+main > h1, p{
+    text-align: center;
+    color: aliceblue;
+}
+main{
+    background-color: rgba(72, 186, 206, 0.753);
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
