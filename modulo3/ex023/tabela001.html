@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table{
+            border-collapse: collapse; /* juntando as bordas */
+            width: 250px;
+            border: 2px solid blueviolet;
+            height: 250px;
+        }
+        .gray{
+            background-color: rgba(57, 57, 61, 0.705);
+        }
+        td{
+            border: 1px solid black;
+            text-align: center; /* alinhamento horizontal */
+            vertical-align: top; /* alinhamento vertical top(cima), midle(meio), bottom(baixo)*/
+        }
+        .dado{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hierarquia de Tabelas
+        Table > tr(linhas) >
+    -->
+    <h1>Minha Tabela</h1>
+    <table>
+        <tr class="gray"> <!-- Primeira Linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td class="dado">C1</td>
+        </tr>
+        <tr> <!-- Segunda Linha-->
+            <td class="dado">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="gray"> <!-- Terceira Linha-->
+            <td>A3</td>
+            <td class="dado">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- Quarta Linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
