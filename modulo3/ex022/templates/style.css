@@ -1,4 +1,75 @@
 @charset "UTF-8";
-main{
-    margin: 20px;
+@font-face {
+    font-family: 'cordel01';
+    src: url('../Passion_One/PassionOne-Bold.ttf');
+}
+@font-face {
+    font-family: 'cordel02';
+    src: url('../Sriracha/Sriracha-Regular.ttf');
+}
+body{
+    margin: auto;
+}
+#cabeca{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    
+    font-size: 20px;
+}
+#cabeca > h1{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: 'cordel01', sans-serif;
+}
+#cabeca > p{
+    margin-top: 6px;
+}
+#corpo > section > p{
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'cordel02';
+    font-size: 20px;
+}
+.caixa{
+    background-color: rgba(0, 0, 0, 0.425);
+    margin-right: 450px;
+    width: 250px;
+    margin-left: 15px;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'cordel02';
+}
+#sessao02{
+    background-image: url('../imagens-cordel/background001.jpg');
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#sessao05{
+    background-image: url('../imagens-cordel/background002.jpg');
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+footer{
+    margin: auto;
+    text-align: center;
+    color: azure;
+    background-color: black;
+    margin-bottom: 0px;
+    height: 30px;
+}
+footer > p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 7px;
 }
