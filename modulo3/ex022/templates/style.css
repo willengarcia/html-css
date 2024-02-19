@@ -34,7 +34,7 @@ body{
     font-size: 20px;
 }
 .caixa{
-    background-color: rgba(0, 0, 0, 0.425);
+    background-color: rgba(0, 0, 0, 0.473);
     margin-right: 450px;
     width: 250px;
     margin-left: 15px;
@@ -50,6 +50,7 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.685);
 }
 #sessao05{
     background-image: url('../imagens-cordel/background002.jpg');
