@@ -9,12 +9,20 @@
             border-collapse: collapse;
             width: 400px;
         }
+        caption{
+            font-size: 1.5em;
+            color: red;
+            font-weight: bold;
+        }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
         thead{
             background-color: aqua;
+        }
+        tbody > tr:nth-child(odd){ /* pular as linhas com efeito zebrado */
+            background-color: rgb(97, 97, 97);
         }
         .num{
             text-align: right;
@@ -26,7 +34,7 @@
     <!--
         Anatomia para tabelas grandes.
         Table
-            Caption
+            Caption (legenda)
             Thead 
                 tr, td, th
             Tbody 
@@ -38,9 +46,9 @@
         <caption>População</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% população</th>
+                <th scope="col">Estado</th> <!-- Para deixar os dados na mesma coluna -->
+                <th scope="col">População</th>
+                <th scope="col">% população</th>
             </tr>
         </thead>
         <tbody>
@@ -58,11 +66,26 @@
                 <td>Minas Gerais</td>
                 <td class="num">232</td>
                 <td>4%</td>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">723 232 123</td>
+                <td>45%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">723 232</td>
+                <td>5%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">232</td>
+                <td>4%</td>
+            </tr>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>10000</strong></td>
             </tr>
         </tfoot>
