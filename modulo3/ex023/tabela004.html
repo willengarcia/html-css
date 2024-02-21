@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de Colunas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+        col.nome{
+            background-color: aquamarine;
+        }
+        col.grupo{
+            background-color: chocolate
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <colgroup>
+        <!-- Número de colunas da tabela usando a tag col, isso serve para destaque de colunas, e depois é só ir no css, e para colocar mais de uma coluna dentro de um col, basta colocar span-->
+        <col class="nome">
+        <col class="grupo" span="2">
+        <col class="sexo">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>Femenino</td>
+                <td>19</td>
+                <td>Analista</td>
+            </tr>
+            <tr>
+                <td>Ana Paula</td>
+                <td>Femenino</td>
+                <td>20</td>
+                <td>RH</td>
+            </tr>
+            <tr>
+                <td>Rosangela Matias</td>
+                <td>Femenino</td>
+                <td>30</td>
+                <td>Advogada</td>
+            </tr>
+            <tr>
+                <td>João Fernando</td>
+                <td>Masculino</td>
+                <td>25</td>
+                <td>Técino de T.I</td>
+            </tr>
+            <tr>
+                <td>Pedro José</td>
+                <td>Masculino</td>
+                <td>29</td>
+                <td>Cozinheiro</td>
+            </tr>
+            <tr>
+                <td>Wallace Júnior</td>
+                <td>Masculino</td>
+                <td>18</td>
+                <td>Jovem Prendiz</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
