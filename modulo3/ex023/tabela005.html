@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: aqua;
+        }
+        col.gray{
+            background-color: gray;
+        }
+        div#container{
+            overflow-x: auto; /* configuração para responsividade, "coisa que transborda" 
+            auto: rolamento interno
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando Tabelas Responsivas</h1>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="gray">
+                <col class="red">
+                <col class="gray">
+                <col class="red">
+                <col class="gray">
+            </colgroup>
+            <caption>Tabela Responsiva</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                    <th>CPF</th>
+                    <th>Senha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Joao</td>
+                    <td>34</td>
+                    <td>masculino</td>
+                    <td>000.000.000-00</td>
+                    <td>xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Joao</td>
+                    <td>34</td>
+                    <td>masculino</td>
+                    <td>000.000.000-00</td>
+                    <td>xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Joao</td>
+                    <td>34</td>
+                    <td>masculino</td>
+                    <td>000.000.000-00</td>
+                    <td>xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Joao</td>
+                    <td>34</td>
+                    <td>masculino</td>
+                    <td>000.000.000-00</td>
+                    <td>xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Joao</td>
+                    <td>34</td>
+                    <td>masculino</td>
+                    <td>000.000.000-00</td>
+                    <td>xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Joao</td>
+                    <td>34</td>
+                    <td>masculino</td>
+                    <td>000.000.000-00</td>
+                    <td>xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Joao</td>
+                    <td>34</td>
+                    <td>masculino</td>
+                    <td>000.000.000-00</td>
+                    <td>xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Joao</td>
+                    <td>34</td>
+                    <td>masculino</td>
+                    <td>000.000.000-00</td>
+                    <td>xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Joao</td>
+                    <td>34</td>
+                    <td>masculino</td>
+                    <td>000.000.000-00</td>
+                    <td>xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Joao</td>
+                    <td>34</td>
+                    <td>masculino</td>
+                    <td>000.000.000-00</td>
+                    <td>xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Joao</td>
+                    <td>34</td>
+                    <td>masculino</td>
+                    <td>000.000.000-00</td>
+                    <td>xxxxxxx</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
