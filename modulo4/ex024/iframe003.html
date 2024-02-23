@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        iframe{
+            width: 95vw;
+            border: 10x solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti assumenda numquam ab pariatur aliquam sed error deleniti neque reprehenderit. Consectetur nesciunt dolores a eaque, veniam porro maiores qui architecto. Nostrum.</p>
+
+    <ul>
+        <li><a href="pagina-extra/pagina001.html" target="frame">Página Teste</a></li>
+        <li><a href="../../modulo3/ex022/index.html" target="frame">Cordel</a></li>
+        <li><a href="../../modulo3/ex023/desafio.html" target="frame">Tabelas</a></li>
+        <li><a href="../../modulo2/pacote-projeto-d010/index.html" target="frame">Androids</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure illum aperiam necessitatibus, eaque delectus itaque sequi dolor pariatur numquam perspiciatis voluptatem eius adipisci suscipit? Beatae repellat vero vitae voluptatibus nisi!</p>
+    <iframe srcdoc="<img src='pagina-extra/wallpaper002.jpg'>"" frameborder="1" name="frame"> 
+        <!-- name dentro do frame é pra um link carregar dentro dele, e o target do link é esse nome -->
+        <!-- Para colocar algo dentro do iframe quando carregar inicialmente, basta excluir o 'src', e substituir por 'srcdoc', nele pode colocar outras tags -->
+        <p>Infezlimente não é copmpatível</p>
+    </iframe>
+</body>
+</html>
