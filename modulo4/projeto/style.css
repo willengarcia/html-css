@@ -33,38 +33,38 @@ html, body{
     transform: scale(120%, 120%);
     transition: 0.3s;
 }
-.logo{
+#logos img{
     width: 50px;
-    height: 50px;
+    margin: 10px;
     border-radius: 50%;
     box-shadow: 1px 1px 5px black;
-    position: absolute;
-    right: 5%;
-    background-position: center center;
-    background-size: cover;
+    box-sizing: border-box;
+}
+#logos{
+    text-align: right;
 }
 #home{
-    margin-top: 50px;
+    margin-top: 10px;
     background-image: url('./imagens/logo-home.jpg');
 }
 #youtube{
-    margin-top: 150px;
+    margin-top: 10px;
     background-image: url('./imagens/logo-youtube.jpg');
 }
 #git{
-    margin-top: 250px;
+    margin-top: 10px;
     background-image: url('./imagens/logo-github.jpg');
 }
 #insta{
-    margin-top: 350px;
+    margin-top: 10px;
     background-image: url('./imagens/logo-instagram.jpg');
 }
 #x{
-    margin-top: 450px;
+    margin-top: 10px;
     background-image: url('./imagens/logo-twitter.jpg');
 }
 #facebook{
-    margin-top: 550px;
+    margin-top: 10px;
     background-image: url('./imagens/logo-facebook.jpg');
 
 }
