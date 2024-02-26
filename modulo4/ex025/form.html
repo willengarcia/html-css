@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Estudos sobre formulários</h1>
+    <h2>Formulário básico</h2>
+    <form autocomplete="off" action="cadastro.php" method="POST"> 
+    <!-- Para deixar o autocomplete off ou on-->
+    <!-- A action serve para o tratamento de dados -->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        
+        <p><label for="iidade">Idade:</label>
+            <input type="number" name="idade" id="iidade">
+        </p>
+        <p><label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha">
+        </p>
+        <p><input type="submit" value="Enviar"></p> 
+        <!-- Enviar forms é com o input 'submit'-->
+        <!-- em php é necessário ter o 'name', já em js é o id -->
+        <!-- Toda vez que colocar o label, tem que ter o mesmo nome que consta no id para haver conexão.-->
+        <!-- O estudo do método POST e GET varia a segurança dos formulários 
+        GET: método padrão do form (são formulários compartilháveis - até 3KB)
+        POST: não exibe os dados na URL (senhas, dados sensíveis, coisas grandes)-->
+    </form>
+</body>
+</html>
