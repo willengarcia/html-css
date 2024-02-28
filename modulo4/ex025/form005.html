@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Estudos sobre Checkbox e radiobutton</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Checkbox</legend>
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label>
+            <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label>
+            <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Volêi</label>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Excluir">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Radiobutton</legend>
+            <input type="radio" name="radio" id="imas" value="M"> <label for="imas">Masculino</label>
+            <input type="radio" name="radio" id="ifem" value="F"> <label for="ifem">Femenino</label>
+            <!--Radiobutton é colocar o mesmo name-->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Excluir">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

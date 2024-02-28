@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários com Color, Range e File</h1>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Color</legend>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="Cor" id="icor" value="#000000">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Excluir">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Range</legend>
+            <p>
+                <label for="isas">Sastifação:</label>
+                <input type="range" name="sas" id="isas" min="1" max="5" value="5">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Excluir">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>File</legend>
+            <p>
+                <label for="ifile">Arquivo:</label>
+                <input type="file" name="file" id="ifile">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Excluir">
+            </p>
+            <!-- Usar o método POST por suportar mais dados-->
+        </fieldset>
+    </form>
+</body>
+</html>
