@@ -7,5 +7,42 @@
 </head>
 <body>
     <h1>Formulário: Select, Datalist, textarea</h1>
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+            <legend>Formulário</legend>
+            <p>
+                <label for="iest">Estado:</label>
+                <select name="Estado" id="iest">
+                    <optgroup label="Região X">
+                        <option value="SP">São Paulo</option>
+                        <option value="PA">Pará</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="AC">Acre</option>
+                    </optgroup>
+                    <optgroup label="Região Y">
+                        <option value="SP">São Paulo</option>
+                        <option value="PA">Pará</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="AC">Acre</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administração</option>
+                    <option value="X">X</option>
+                    <option value="Y">Y</option>
+                    <option value="Z">Z</option>
+                </datalist>
+                <!-- Se atentar no id do datalist e o list do input-->
+            </p>
+            <p>
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="Mensagem" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+    </form>
 </body>
 </html>
