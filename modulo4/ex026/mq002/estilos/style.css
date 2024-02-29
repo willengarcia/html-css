@@ -9,7 +9,7 @@ html, body{
     height: 100vh;
     background-size: contain; /* colocar a imagem toda */
     background-repeat: no-repeat;
-    background-color: blue
+    background-color: #233eff;
 }
 h1{
     color: aliceblue;
