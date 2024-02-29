@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* Estilos para Impressoras */
+*{
+    margin: 10px;
+    padding: 10px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+menu{
+    display: none; /* não exibe o menu */
+}
+article::after{
+    content: 'Esse é um teste de media queries';
+}
+article{
+    text-align: justify;
+    width: 100%;
+}
+h1{
+    padding: 0px;
+    margin: 0px;
+}
