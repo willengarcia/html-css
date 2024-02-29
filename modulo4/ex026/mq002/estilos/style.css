@@ -1,2 +1,18 @@
 @charset "UTF-8";
 /* Configurações Gerais */
+*{
+    margin:0px;
+    padding: 0px;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../imagens/cev-landscape.jpg');
+    background-size: contain; /* colocar a imagem toda */
+    background-repeat: no-repeat;
+}
+h1{
+    color: aliceblue;
+    text-shadow: 3px 3px 0px #1b2caf;
+    padding: 10px;
+}
