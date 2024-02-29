@@ -7,12 +7,12 @@
 html, body{
     width: 100vw;
     height: 100vh;
-    background-image: url('../imagens/cev-landscape.jpg');
     background-size: contain; /* colocar a imagem toda */
     background-repeat: no-repeat;
+    background-color: blue
 }
 h1{
     color: aliceblue;
-    text-shadow: 3px 3px 0px #1b2caf;
+    text-shadow: 3px 3px 0px #2136d6;
     padding: 10px;
 }
