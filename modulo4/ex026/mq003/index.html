@@ -6,23 +6,26 @@
     <title>Media Queries</title>
     <style>
         /* declarações gerais */
-        *{
-        margin:0px;
-        padding: 0px;
-    }
-    html, body{
-        width: 100vw;
-        height: 100vh;
-        background-size: contain; /* colocar a imagem toda */
-        background-repeat: no-repeat;
-        background-color: #233eff;
-    }
-    h1{
-        color: aliceblue;
-        text-shadow: 3px 3px 0px #2136d6;
-        padding: 10px;
-    }
-        /* declarações paisagem */
+        @media all{
+            *{
+            margin:0px;
+            padding: 0px;
+            }
+            html, body{
+                width: 100vw;
+                height: 100vh;
+                background-size: contain; /* colocar a imagem toda */
+                background-repeat: no-repeat;
+                background-color: #233eff;
+            }
+            h1{
+                color: aliceblue;
+                text-shadow: 3px 3px 0px #2136d6;
+                padding: 10px;
+            }
+        }
+        
+            /* declarações paisagem */
         @media screen and (orientation: landscape) {
             body{
                 background-image: url('../imagens/cev-landscape.jpg');
