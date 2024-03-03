@@ -17,10 +17,10 @@ h1{
 }
 #burguer{
     background-color: rgb(68, 67, 67);
-    display: block;
     color: white;
     text-align: center;
     padding: 10px;
+    position: fixed;
     cursor: pointer /* transformar o cursor em mãosinha */;
 }
 #burguer:hover{
