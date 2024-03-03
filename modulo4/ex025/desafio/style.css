@@ -1,0 +1,63 @@
+@charset "URF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: darkcyan;
+}
+header{
+    background-image: url('fundo.jpg');
+    border-radius: 15px;
+    margin: auto;
+    height: 500px;
+    width: 350px;
+    margin-top: 20vh;
+}
+form{
+    background-color: aqua;
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+    position: relative;
+    top: 250px;
+}
+form > h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form > p{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+form > #pessoa, #senha {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px 5px 0px 5px;
+}
+#pessoa > #iemail, #senha > #ipass{
+    height: 25px;
+    width: 280px;
+    border-radius: 10px;
+}
+span{
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+.botao{
+    display: block;
+    margin: auto;
+    font-size: 15px;
+    padding: 2px;
+    margin-top: 4px;
+    width: 200px;
+    background-color: cadetblue;
+    border-radius: 5px;
+}
+.botao:hover{
+    background-color: rgb(4, 84, 99);
+}
