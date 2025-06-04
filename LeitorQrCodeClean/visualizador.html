@@ -5,45 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Visualizar Pedido</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+    :root {
+      --primary-color: #1e3a8a;
+      --primary-hover: #1e40af;
+      --secondary-color: #f0f4ff;
+      --text-color: #1e1e2e;
+      --light-text: #6b7280;
+      --border-color: #d1d5db;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
       margin: 0;
-      padding: 40px 20px;
+      padding: 0;
+      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-color);
       display: flex;
       justify-content: center;
       align-items: flex-start;
     }
 
     .container {
-      max-width: 500px;
       width: 100%;
+      max-width: 34rem;
       background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      padding: 30px 40px;
+      padding: 2.5rem;
+      margin: 2rem 1rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: var(--transition);
     }
 
     h1 {
+      font-size: 2rem;
+      font-weight: 700;
       text-align: center;
-      margin-bottom: 30px;
-      color: #2c3e50;
+      color: var(--text-color);
+      margin-bottom: 1rem;
     }
 
     .item {
-      margin-bottom: 12px;
-      font-size: 16px;
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+      background: var(--secondary-color);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      word-break: break-word;
     }
 
-    .item .label {
+    .label {
       font-weight: 600;
-      color: #555;
-      margin-right: 5px;
+      color: var(--light-text);
     }
 
-    .item .value {
-      color: #222;
+    .value {
+      color: var(--text-color);
     }
 
     .true {
@@ -54,6 +84,21 @@
     .false {
       color: red;
       font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .item {
+        font-size: 0.95rem;
+        padding: 0.75rem;
+      }
     }
   </style>
 </head>
@@ -76,7 +121,7 @@
         div.className = 'item';
 
         // Formata valores booleanos
-        let displayValue = value;
+        let displayValue;
         if (typeof value === 'boolean') {
           displayValue = `<span class="${value}">${value}</span>`;
         } else {
